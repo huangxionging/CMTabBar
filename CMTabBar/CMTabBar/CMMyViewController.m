@@ -7,7 +7,7 @@
 //
 
 #import "CMMyViewController.h"
-
+#import "UIViewController+UtilityTool.h"
 @interface CMMyViewController ()
 
 @end
@@ -17,10 +17,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"我的";
+    self.title = @"我的";
+    self.navigationController.navigationBar.hidden = NO;
     self.view.backgroundColor = [UIColor yellowColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self action: @selector(push)];
+    UIButton *button = [UIButton buttonWithType: UIButtonTypeContactAdd];
+    button.frame = CGRectMake(100, 100,  50, 25);
+    [button addTarget: self action: @selector(push) forControlEvents: UIControlEventTouchUpInside];
+    [self.view addSubview: button];
 }
 
+
+
+- (void) push {
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.navigationItem.title = @"查水表";
+    vc1.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemAdd target: self action: @selector(push)];
+    [self.navigationController pushViewController: vc1  animated: YES];
+    vc1.view.backgroundColor = [UIColor purpleColor];
+}
+
+//- (BOOL)needNavigationBar {
+//    return NO;
+//}
 /*
 #pragma mark - Navigation
 
@@ -30,5 +49,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (BOOL)needNavigationBar {
+    return NO;
+}
+
 
 @end

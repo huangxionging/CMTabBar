@@ -15,6 +15,7 @@
 #import "CMNavigationController.h"
 #import "CMTabBar.h"
 #import "UITabBar+UtilityTool.h"
+#import "CMHomePageMainViewController.h"
 
 @interface CMTabBarController ()
 
@@ -28,7 +29,7 @@
     if (_myTabBar == nil) {
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
         CGFloat tabBarHeight = CGRectGetHeight(self.tabBar.frame);
-        _myTabBar = [[CMTabBar alloc] initWithFrame: CGRectMake(0, tabBarHeight - 76, screenWidth, 76) typeOfTabBarIndex: 0];
+        _myTabBar = [[CMTabBar alloc] initWithFrame: CGRectMake(0, tabBarHeight - 76 - 34, screenWidth, 76) typeOfTabBarIndex: 0];
         _myTabBar.tabBarController = self;
     }
     return _myTabBar;
@@ -42,11 +43,12 @@
     self.tabBar.backgroundColor = [UIColor whiteColor];
     self.tabBar.opaque = YES;
     [self.tabBar setClipsToBounds:NO];
+    [self.tabBar setShadowImage: [UIImage alloc]];
     [self configViewControllers];
 }
 
 - (void) configViewControllers {
-    CMHomePageViewController *homePage = [[CMHomePageViewController alloc] init];
+    CMHomePageMainViewController *homePage = [[CMHomePageMainViewController alloc] init];
     CMNavigationController *navHome = [[CMNavigationController alloc] initWithRootViewController: homePage];
     
     CMMyViewController *myVC = [[CMMyViewController alloc] init];

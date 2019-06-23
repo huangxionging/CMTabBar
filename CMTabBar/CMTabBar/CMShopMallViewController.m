@@ -7,7 +7,7 @@
 //
 
 #import "CMShopMallViewController.h"
-
+#import "UIViewController+UtilityTool.h"
 @interface CMShopMallViewController ()
 
 @end

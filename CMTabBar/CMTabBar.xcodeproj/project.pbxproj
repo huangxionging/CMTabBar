@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F28DC8C822BD53940014F3FA /* UIViewController+UtilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F28DC8C722BD53940014F3FA /* UIViewController+UtilityTool.m */; };
+		F28DC8CC22BD5C3D0014F3FA /* CMHomePageMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F28DC8CA22BD5C3D0014F3FA /* CMHomePageMainViewController.m */; };
+		F28DC8CD22BD5C3D0014F3FA /* CMHomePageMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28DC8CB22BD5C3D0014F3FA /* CMHomePageMainViewController.xib */; };
 		F2D84A3F22AA12D100E8051E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D84A3E22AA12D100E8051E /* AppDelegate.m */; };
 		F2D84A4722AA12D200E8051E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D84A4622AA12D200E8051E /* Assets.xcassets */; };
 		F2D84A4A22AA12D200E8051E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D84A4822AA12D200E8051E /* LaunchScreen.storyboard */; };
@@ -44,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F28DC8C622BD53940014F3FA /* UIViewController+UtilityTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UtilityTool.h"; sourceTree = "<group>"; };
+		F28DC8C722BD53940014F3FA /* UIViewController+UtilityTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UtilityTool.m"; sourceTree = "<group>"; };
+		F28DC8C922BD5C3D0014F3FA /* CMHomePageMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMHomePageMainViewController.h; sourceTree = "<group>"; };
+		F28DC8CA22BD5C3D0014F3FA /* CMHomePageMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMHomePageMainViewController.m; sourceTree = "<group>"; };
+		F28DC8CB22BD5C3D0014F3FA /* CMHomePageMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CMHomePageMainViewController.xib; sourceTree = "<group>"; };
 		F2D84A3A22AA12D100E8051E /* CMTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D84A3D22AA12D100E8051E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2D84A3E22AA12D100E8051E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +143,9 @@
 				F2D84A6422AA167100E8051E /* CMDiscoveryViewController.m */,
 				F2D84A6622AA169200E8051E /* CMCoinViewController.h */,
 				F2D84A6722AA169200E8051E /* CMCoinViewController.m */,
+				F28DC8C922BD5C3D0014F3FA /* CMHomePageMainViewController.h */,
+				F28DC8CA22BD5C3D0014F3FA /* CMHomePageMainViewController.m */,
+				F28DC8CB22BD5C3D0014F3FA /* CMHomePageMainViewController.xib */,
 				F2D84A4622AA12D200E8051E /* Assets.xcassets */,
 				F2D84A4822AA12D200E8051E /* LaunchScreen.storyboard */,
 				F2D84A4B22AA12D200E8051E /* Info.plist */,
@@ -180,6 +191,8 @@
 				F2D84A6F22AA1ACC00E8051E /* CMTabBar.xib */,
 				F2D84A9A22AA6F6800E8051E /* UITabBar+UtilityTool.h */,
 				F2D84A9B22AA6F6800E8051E /* UITabBar+UtilityTool.m */,
+				F28DC8C622BD53940014F3FA /* UIViewController+UtilityTool.h */,
+				F28DC8C722BD53940014F3FA /* UIViewController+UtilityTool.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +295,7 @@
 				F2D84A8A22AA1C9300E8051E /* discovery_normal@2x.png in Resources */,
 				F2D84A8822AA1C9300E8051E /* discovery_normal@3x.png in Resources */,
 				F2D84A8E22AA1C9300E8051E /* my_normal@2x.png in Resources */,
+				F28DC8CD22BD5C3D0014F3FA /* CMHomePageMainViewController.xib in Resources */,
 				F2D84A8D22AA1C9300E8051E /* my_select@2x.png in Resources */,
 				F2D84A9922AA1C9300E8051E /* short_cut_select@3x.png in Resources */,
 				F2D84A9222AA1C9300E8051E /* love_coin_normal@3x.png in Resources */,
@@ -308,9 +322,11 @@
 				F2D84A6222AA166000E8051E /* CMShopMallViewController.m in Sources */,
 				F2D84A4D22AA12D200E8051E /* main.m in Sources */,
 				F2D84A6522AA167100E8051E /* CMDiscoveryViewController.m in Sources */,
+				F28DC8C822BD53940014F3FA /* UIViewController+UtilityTool.m in Sources */,
 				F2D84A6822AA169200E8051E /* CMCoinViewController.m in Sources */,
 				F2D84A5922AA13C400E8051E /* CMTabBarController.m in Sources */,
 				F2D84A3F22AA12D100E8051E /* AppDelegate.m in Sources */,
+				F28DC8CC22BD5C3D0014F3FA /* CMHomePageMainViewController.m in Sources */,
 				F2D84A6B22AA16BF00E8051E /* CMNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
